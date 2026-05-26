@@ -20,6 +20,7 @@ dependencies=["numpy", "torch"]
 [tool.scikit-build]
 build-dir = "build"
 minimum-version = "0.10"
+maximum-version = "0.10"
 ninja.make-fallback = true
 logging.level = "INFO"
 build.verbose = true
@@ -36,7 +37,7 @@ license-files = ["LICENSE"]
 exclude = ["**/.mypy_cache/**", "**/build/**", "**/.vscode/**"]
 
 [build-system]
-requires = ["scikit-build-core>=0.10", "pybind11>=2.10", "cmake", "ninja"]
+requires = ["scikit-build-core==0.10", "pybind11>=2.10", "cmake", "ninja"]
 build-backend = "scikit_build_core.build"
 
 [tool.isort]
