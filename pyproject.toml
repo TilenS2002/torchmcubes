@@ -31,7 +31,8 @@ args = [
   "-DCUDA_TOOLKIT_ROOT_DIR=/home/lgm/TripoSR/.venv",
   "-DCUDA_INCLUDE_DIRS=/home/lgm/TripoSR/.venv/targets/x86_64-linux/include",
   "-DCUDA_CUDART_LIBRARY=/home/lgm/TripoSR/.venv/targets/x86_64-linux/lib/libcudart.so",
-  "-DCMAKE_PREFIX_PATH=/home/lgm/TripoSR/.venv/lib/python3.10/site-packages/torch/share/cmake"
+  "-DCMAKE_PREFIX_PATH=/home/lgm/TripoSR/.venv/lib/python3.10/site-packages/torch/share/cmake",
+  "-Dpybind11_DIR=/home/lgm/TripoSR/.venv/lib/python3.10/site-packages/pybind11/share/cmake/pybind11"
 ]
 
 [tool.scikit-build.wheel]
