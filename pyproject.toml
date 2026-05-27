@@ -28,10 +28,12 @@ version = ">=3.31,<4.0"
 verbose = true
 source-dir = "."
 args = [
-  "-DCMAKE_CUDA_COMPILER=/usr/local/cuda/bin/nvcc",
+   "-DCMAKE_CUDA_COMPILER=/usr/local/cuda/bin/nvcc",
   "-DCMAKE_CUDA_FLAGS=--allow-unsupported-compiler",
   "-DCMAKE_CUDA_HOST_COMPILER=/usr/bin/gcc-13",
   "-DCMAKE_CXX_COMPILER=/usr/bin/g++-13",
+  "-DCMAKE_EXE_LINKER_FLAGS=-fuse-ld=/usr/bin/ld",
+  "-DCMAKE_SHARED_LINKER_FLAGS=-fuse-ld=/usr/bin/ld",
   "-DCUDA_TOOLKIT_ROOT_DIR=/usr/local/cuda",
   "-DCUDA_INCLUDE_DIRS=/usr/local/cuda/include",
   "-DCUDA_CUDART_LIBRARY=/usr/local/cuda/lib64/libcudart.so",
