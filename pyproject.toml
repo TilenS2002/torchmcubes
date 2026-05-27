@@ -35,6 +35,8 @@ args = [
   "-DCUDA_TOOLKIT_ROOT_DIR=/usr/local/cuda",
   "-DCUDA_INCLUDE_DIRS=/usr/local/cuda/include",
   "-DCUDA_CUDART_LIBRARY=/usr/local/cuda/lib64/libcudart.so",
+  "-DCUDAToolkit_ROOT=/usr/local/cuda",
+  "-DCUDAToolkit_INCLUDE_DIR=/usr/local/cuda/include",
   "-Dpybind11_DIR=/home/lgm/TripoSR/.venv/lib/python3.10/site-packages/pybind11/share/cmake/pybind11",
   "-DCMAKE_PREFIX_PATH=/home/lgm/TripoSR/.venv/lib/python3.10/site-packages/torch/share/cmake;/home/lgm/TripoSR/.venv/lib/python3.10/site-packages/pybind11/share/cmake;/usr/local/cuda"
 ]
