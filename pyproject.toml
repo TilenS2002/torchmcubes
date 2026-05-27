@@ -22,10 +22,10 @@ build-dir = "build"
 minimum-version = "0.9"
 ninja.make-fallback = true
 logging.level = "INFO"
-cmake.verbose = true
 
 [tool.scikit-build.cmake]
 version = ">=3.31,<4.0"
+verbose = true
 source-dir = "."
 args = []
 
