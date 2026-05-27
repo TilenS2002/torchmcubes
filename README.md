@@ -30,7 +30,7 @@ export PATH=$CUDA_HOME/bin:$PATH
 
 ```shell
 # Make sure that your environment meets the requirements above
-pip install git+https://github.com/tatsy/torchmcubes.git
+pip install git+https://github.com/TilenS2002/torchmcubes.git
 ```
 
 ## Usage
