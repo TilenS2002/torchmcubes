@@ -19,7 +19,7 @@ dependencies=["numpy", "torch"]
 
 [tool.scikit-build]
 build-dir = "build"
-minimum-version = "0.10"
+minimum-version = "0.9"
 ninja.make-fallback = true
 logging.level = "INFO"
 build.verbose = true
